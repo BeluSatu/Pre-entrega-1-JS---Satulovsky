@@ -23,9 +23,9 @@ switch (decision) {
 
     case "yes":
         console.log( "Denji ayuda a Pochita y se hacen amigos");
-        document.write("<div class='card'><img src='./../assets/pochita-comiendo.png' /></div>"
+        document.write("<div class='card'><img src='./assets/pochita-comiendo.png' /></div>"
         );
-        document.write("<div class='card'><img src='./../assets/denji-amigo-pochita.png' /></div>"
+        document.write("<div class='card'><img src='./assets/denji-amigo-pochita.png' /></div>"
         );
         break;
     
@@ -33,9 +33,9 @@ switch (decision) {
 
         case "no":
             console.log( "Denji no ayuda a Pochita y ella mata a Denji");
-            document.write("<div class='card'><img src='./../assets/pochita-se-enoja.jpg' /></div>"
+            document.write("<div class='card'><img src='./assets/pochita-se-enoja.jpg' /></div>"
             );
-            document.write("<div class='card'><img src='./../assets/muere-denji2.png' /></div>"
+            document.write("<div class='card'><img src='./assets/muere-denji2.png' /></div>"
             );
 
             break;
@@ -49,19 +49,19 @@ if (decision == decisionBuena) {
     console.log( "Varios años después de deambular juntos, a Denji le llega una oferta de trabajo un tanto sospechosa, pero que de todas manera acepta sin dudarlo. Lo que nunca pensó era que esa oferta era una trampa tendida por la mafia quienes buscaban cobrar la deuda que el padre de Denji había dejado en su pasado.");
 
     console.log("De esta manera, Denji queda atrapado en un callejón oscuro y terribles criaturas empiezan a llegar para devorarlo");
-    document.write("<div class='card'><img src='./../assets/trampa.png' /></div>"
+    document.write("<div class='card'><img src='./assets/trampa.png' /></div>"
     );
-    document.write("<div class='card'><img src='./../assets/denji-apuñalado.png' /></div>"
+    document.write("<div class='card'><img src='./assets/denji-apuñalado.png' /></div>"
     );
-    document.write("<div class='ganador'><img src='./../assets/zombies.jpg' /></div>"
+    document.write("<div class='ganador'><img src='./assets/zombies.jpg' /></div>"
     );
 } 
 else {(primerPersonaje != decisionBuena)
 
     console.log("Tras matar a Denji, Pochita se elimentó de su sangre para recuperar su energía hasta llegar a convertirse en uno de los demonios más fuertes en caminar por la Tierra. Ahora, le quedaba un único objetivo: conseguir un humano para generar un contrato y conseguir la vida eterna.");
-    document.write("<div class='card2'><img src='./../assets/pochita-power.jpg' /></div>"
+    document.write("<div class='card2'><img src='./assets/pochita-power.jpg' /></div>"
     );
-    document.write("<div class='card2'><img src='./../assets/pochita-fuerza.jpg' /></div>"
+    document.write("<div class='card2'><img src='./assets/pochita-fuerza.jpg' /></div>"
     );
 }
 
@@ -76,18 +76,18 @@ switch (decision2) {
     case "yes":
     console.log( "Denji estaba muriendo, pero Pochita decide hacer un contrato con él fusionando sus dos cuerpos y de esta manera salvarle la vida"
     );
-    document.write("<div class='ganador2'><img src='./../assets/fusion-pichita.jpg' /></div>"
+    document.write("<div class='ganador2'><img src='./assets/fusion-pichita.jpg' /></div>"
     );
-    document.write("<div class='card3'><img src='./../assets/matando-zombies.jpg' /></div>"
+    document.write("<div class='card3'><img src='./assets/matando-zombies.jpg' /></div>"
     );
-    document.write("<div class='card3'><img src='./../assets/fusion.jpg' /></div>"
+    document.write("<div class='card3'><img src='./assets/fusion.jpg' /></div>"
     );
     break;
 
 
     case "no":
         console.log ("Los zombies matan a Denji");
-        document.write("<div class='ganador3'><img src='./../assets/muere-denji.jpg' /></div>"
+        document.write("<div class='ganador3'><img src='./assets/muere-denji.jpg' /></div>"
         );
         break;
 
@@ -123,7 +123,7 @@ if (decision2 == opcion1) {
         } else if (golpePochita > golpeZombies) {
             console.log("Pochita ataca con una fuerza de " + golpePochita);
             document.write(
-            "<div class='card4'><img src='./../assets/pochi-win.jpg' /></div>"
+            "<div class='card4'><img src='./assets/pochi-win.jpg' /></div>"
             );
             energiaZombies -= golpePochita;
             if (energiaZombies < 0) {
@@ -133,7 +133,7 @@ if (decision2 == opcion1) {
         } else {
             console.log("Zombies ataca con una fuerza de " + golpeZombies);
             document.write(
-            "<div class='card5'><img src='./../assets/zombies-power2.png' /></div>"
+            "<div class='card5'><img src='./assets/zombies-power2.png' /></div>"
             );
             
             energiaPochita -= golpeZombies;
@@ -150,12 +150,12 @@ if (decision2 == opcion1) {
 if (energiaZombies > 0) {
     console.log("Ganaron los Zombies");
         document.write(
-    "<div class'ganador4'><img src='./../assets/zombies-wins.jpg' /></div>"
+    "<div class'ganador4'><img src='./assets/zombies-wins.jpg' /></div>"
     );
 } else {
     console.log("Gano Pochita");
     document.write(
-    "<div class'ganador5'><img src='./../assets/pochita-ganando.jpg' /></div>"
+    "<div class'ganador5'><img src='./assets/pochita-ganando.jpg' /></div>"
     );
 }   
     
