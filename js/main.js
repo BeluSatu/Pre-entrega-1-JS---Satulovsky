@@ -3,6 +3,23 @@
 
 /* What if...? versión Chainsaw Man */
 
+
+function presentarUsuario(callbackPresentacion) {
+    // Obtener el nombre del usuario mediante un prompt
+    const nombreUsuario = prompt("Por favor, ingresa tu nombre:");
+
+    // Ejecutar la función de presentación proporcionando el nombre del usuario
+    callbackPresentacion(nombreUsuario);
+}
+
+function presentarFormal(nombre) {
+    console.log(`Bienvenido, estimado ${nombre}. Esperamos que disfrutes tu experiencia en What If...versión Chainsaw Man.`);
+}
+
+presentarUsuario(presentarFormal);
+
+
+
 function introduccion () {
 
     console.log("Denji es un niño que está de luto en la lápida de su padre sin ánimos de seguir luchando; no tiene techo, comida ni nadie que lo cuide. En medio de su lamento, un demonio de forma pequeña y aparaciencia tierna pareció reaccionar con hostilidad hacia él, pero rápidamente cayó al suelo, incapaz de soportar más sus heridas")
@@ -56,7 +73,7 @@ if (decision == decisionBuena) {
     document.write("<div class='ganador'><img src='./assets/zombies.jpg' /></div>"
     );
 } 
-else {(primerPersonaje != decisionBuena)
+else {(primerPersonaje == decisionMala)
 
     console.log("Tras matar a Denji, Pochita se elimentó de su sangre para recuperar su energía hasta llegar a convertirse en uno de los demonios más fuertes en caminar por la Tierra. Ahora, le quedaba un único objetivo: conseguir un humano para generar un contrato y conseguir la vida eterna.");
     document.write("<div class='card2'><img src='./assets/pochita-power.jpg' /></div>"
@@ -118,6 +135,7 @@ if (decision2 == opcion1) {
         
 
         console.log("--------------Round " + round + "-----------------------");
+
         if (golpePochita === golpeZombies) {
             console.log("siga siga");
         } else if (golpePochita > golpeZombies) {
@@ -158,7 +176,74 @@ if (energiaZombies > 0) {
     "<div class'ganador5'><img src='./assets/pochita-ganando.jpg' /></div>"
     );
 }   
+
+
+
+function desarrollo () {
+
+    if (energiaZombies > 0) {
+        console.log("FIN");
+        
+    } else {
+        console.log("Cubierto de sangre, el Demonio de la Motosirra quedó de pie hasta volver a su forma humana. En ese momento,Denji se desvanece para luego despertar en una oficina junto a un montón de gente desconocida.");
+        document.write(
+            "<div class'ganador6'><img src='./assets/makima.jpg' /></div>"
+            );
+            document.write(
+                "<div class'ganador6'><img src='./assets/makima-denji.png' /></div>"
+                );
+                const nombrePersonajes = prompt("¿Quieres conocer a los personajes misteriosos?");
+                let opcionPersonajes1= "yes";
+                let opcionPersonajes2= "no";
+            
+            
+                switch (nombrePersonajes) {
+            
+                    case "yes":
+                        function personajes(nombre, puesto, poder) {
+            
+                            this.nombre = nombre;
+                            this.puesto = puesto;
+                            this.poder = poder;
+            
+                }
+            
+                const personajes1 = new personajes ("Makima", "jefa", "controlar a las personas");
+                console.log (personajes1);
+                document.write(
+                    "<div class'ganador6'><img src='./assets/makima-presentacion.jpg' /></div>"
+                    );
+                
+                const personajes2 = new personajes ("Power", "recluta", "demonio de la sangre");
+                console.log (personajes2);
+                document.write(
+                    "<div class'ganador6'><img src='./assets/power.jpg' /></div>"
+                    );
+
+                    const totalPersonajes = new Array("Denji", "Makima", "Power", "Pochita");
+                    console.log(totalPersonajes);
+                    
+                    
+                    
+            
+                break;
+                
+                    case "no":
+                        console.log ("Veo que te gusta mantener el misterio...");
+                
+                
+                
+                        
+                }
+
+                
+
+            }   
+
     
+    }
+
+    desarrollo();
 
 
 
